@@ -1,6 +1,5 @@
 import React from 'react'
 import Form from '../../Components/Forms'
-// import { Section, Div } from './Reservation.styles'
 import { 
   HeroContainer,
   HeroContent,
@@ -8,7 +7,7 @@ import {
   HeroH1,
   HeroP
 } from './Reservation.styles';
-// import BG from '../../Assets/images/reservation4.png'
+
 
 const Reservation = () => {
   return (
@@ -22,14 +21,6 @@ const Reservation = () => {
       </HeroContent>
       </HeroContainer>
       <Form />
-      
-      {/* <Section>
-        <Div>
-          <img src={BG} alt='' />
-          <h1>RESERVATION</h1>
-        </Div>
-      <Form />
-      </Section> */}
     </>
   )
 }

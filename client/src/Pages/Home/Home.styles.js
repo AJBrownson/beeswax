@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import BG from '../../assets/images/pizza-3.jpg'
-// import DeliveryBoy from '../../assets/images/delivery-boy.svg'
-// import Clouds from '../../assets/images/delivery-banner-bg.png'
+
 
 
 //      STYLING FOR THE HERO SECTION
@@ -48,22 +47,6 @@ export const HeroP = styled.p`
   font-size: clamp(2rem, 2.5vw, 3rem);
   margin-bottom: 2rem;
 `;
-
-// export const HeroBtn = styled.button`
-//   font-size: 1.4rem;
-//   padding: 1rem 4rem;
-//   border: none;
-//   background: #ffc500;
-//   color: #000;
-//   transition: 0.2s ease-out;
-
-//   &:hover {
-//     background: #0d0909;
-//     transition: 0.2s ease-out;
-//     cursor: pointer;
-//     color: #fff;
-//   }
-// `;
 
 
 
