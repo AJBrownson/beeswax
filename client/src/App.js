@@ -1,12 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './Layout/Navbar'
+import GlobalStyles from './assets/GlobalStyles'
+import Routing from './Routes'
+import Footer from './Layout/Footer'
 
-function App() {
+
+function App () {
+
   return (
     <>
-      Hello Moto
+      <GlobalStyles />
+      <Navbar />
+      <Routing />
+      <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
