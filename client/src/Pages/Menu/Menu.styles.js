@@ -45,3 +45,9 @@ export const HeroP = styled.p`
   font-size: clamp(2rem, 2.5vw, 3rem);
   margin-bottom: 2rem;
 `;
+
+export const Menuu = styled.div`
+height: 80vh;
+background: hsl(38, 44%, 96%);
+padding: 40px;
+`

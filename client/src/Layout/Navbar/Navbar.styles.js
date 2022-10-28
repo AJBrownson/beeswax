@@ -7,7 +7,9 @@ import { Container } from '../../assets/GlobalStyles'
 export const Nav = styled.nav`
 margin: 0;
 height: 80px;
-background: #fff;
+background: #0d0909;
+border-bottom: #0d0909;
+// background: white;
 display: flex;
 position: sticky;
 justify-content: space-between;
@@ -26,7 +28,7 @@ ${Container}
 
 
 export const NavLogo = styled(Link)`
-color: #0d0909;
+color: #fff;
 justify-self: flex-start;
 text-decoration: none;
 font-size: 2rem;
@@ -51,6 +53,7 @@ display: none;
     transform: translate(-100%, 68%);
     font-size: 1.8rem;
     cursor: pointer;
+    color: white;
 }
 `;
 
@@ -80,9 +83,9 @@ export const NavItem = styled.li`
 height: 80px;
 border-bottom: 2px solid transparent;
 
-&:hover {
-    border-bottom: 2px solid #000016;
-}
+// &:hover {
+//     border-bottom: 2px solid #000016;
+// }
 
 @media screen and (max-width: 991px) {
     width: 100%;
@@ -100,7 +103,8 @@ text-decoration: none;
 list-style: none;
 padding: 0.5rem 1rem;
 height: 100%;
-color: #0d0909;
+// color: #0d0909;
+color: white;
 
 // &:active {
 //         color: blue;

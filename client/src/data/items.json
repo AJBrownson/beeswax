@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Hamburger",
+        "price": 10.99,
+        "image": "/images/food.png"
+    },
+    
+    {
+        "id": 2,
+        "name": "Potatoes",
+        "price": 10.99,
+        "image": "/images/food.png"
+    },
+    
+    {
+        "id": 3,
+        "name": "Cream",
+        "price": 10.99,
+        "image": "/images/food.png"
+    }
+]

@@ -4,9 +4,13 @@ import {
   HeroContent, 
   HeroItems, 
   HeroH1, 
-  HeroP 
+  HeroP,
+  Menuu,
+  MenuuDiv
 } from './Menu.styles'
-
+import Swipe from './Swiper'
+import products from '../../data/items.json'
+import StoreItem from '../../Components/Stores/StoreItem'
 
 const Menu = () => {
   return (
@@ -19,6 +23,16 @@ const Menu = () => {
           </HeroItems>
         </HeroContent>
       </MenuHeroContainer>
+      
+      <Menuu>
+        <p>Pizza</p>
+        <Swipe />
+      </Menuu>
+
+      <Menuu>
+        <p>Hamburgers</p>
+        <Swipe />
+      </Menuu>
     </>
   )
 }

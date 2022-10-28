@@ -1,0 +1,76 @@
+.container .mySwiper {
+  width: 100%;
+}
+
+.mySwiper .swiperslide {
+  -webkit-transform: translateZ(0);
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+  color: orange;
+}
+
+/* For styling the buttons 
+
+.swiper-button-next {
+  background-image: url();
+}
+
+.swiper-button-prev {
+  background-image: url();
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+  display: none;
+}
+
+*/
+
+.swiper-pagination-bullet-active {
+  background-color: orange;
+}
+
+.card .details {
+  color: black;
+}
+
+/* .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    }
+
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    */
