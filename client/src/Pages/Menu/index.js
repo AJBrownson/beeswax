@@ -6,7 +6,7 @@ import {
   HeroH1, 
   HeroP,
   Menuu,
-  MenuuDiv
+  MenuHeading
 } from './Menu.styles'
 import Swipe from './Swiper'
 import products from '../../data/items.json'
@@ -25,12 +25,12 @@ const Menu = () => {
       </MenuHeroContainer>
       
       <Menuu>
-        <p>Pizza</p>
+        <MenuHeading>Pizza</MenuHeading>
         <Swipe />
       </Menuu>
 
       <Menuu>
-        <p>Hamburgers</p>
+        <MenuHeading>Hamburgers</MenuHeading>
         <Swipe />
       </Menuu>
     </>

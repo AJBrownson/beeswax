@@ -12,12 +12,14 @@ import "./styles.css";
 
 // import required modules
 import { Navigation, Lazy } from "swiper";
-
-import Food from '../../assets/images/food.png'
+import { MenuItems } from "./MenuItems";
+import menuItems from '../../data/items.json'
+// import GiWineBottle FiCoffee <FiShoppingCart />
 
 
 
 export default function Swipe() {
+
   return (
     <>
       <div className='container'>
@@ -37,46 +39,37 @@ export default function Swipe() {
         modules={[ Navigation, Lazy ]}
         className="mySwiper"
       >
-        <SwiperSlide className="swiperslide">
+        {menuItems.map(item => (
+            <SwiperSlide key={item.id}>
+              <MenuItems {...item} /> 
+            </SwiperSlide>
+          ))}
+
+        {/* <SwiperSlide className="swiperslide">
             <div className="card">
               <img src={Food} alt='' />
               <div className="details">
                 <h3>Chicken Masala</h3>
-                <p>$12.00</p>
-                <button>Add to Cart</button>
+                <p>₦2500</p>
               </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiperslide">
-            <div className="card">
-              <img src={Food} alt='' />
-              <div className="details">
-                <h3>Chicken Masala</h3>
-                <p>$12.00</p>
-                <button>Add to Cart</button>
+              <div className="button-div">
+                {quantity === 0 ? (
+                  <Add2Cart onClick={() => increaseCartQuantity()} />
+                ) : <div className="column-div">
+                      <div className="row-div">
+                        <Increase onClick={() => increaseCartQuantity()} />
+                        <div>
+                          <span>{quantity}</span> in cart
+                        </div>
+                        <Decrease onClick={() => decreaseCartQuantity()} />
+                      </div>
+                      <Remove onClick={() => removeFromCart()} />
+                  </div>}
               </div>
+              
             </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiperslide">
-            <div className="card">
-              <img src={Food} alt='' />
-              <div className="details">
-                <h3>Chicken Masala</h3>
-                <p>$12.00</p>
-                <button>Add to Cart</button>
-              </div>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiperslide">
-            <div className="card">
-              <img src={Food} alt='' />
-              <div className="details">
-                <h3>Chicken Masala</h3>
-                <p>$12.00</p>
-                <button>Add to Cart</button>
-              </div>
-            </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
+        
       </Swiper>
       </div>
     </>

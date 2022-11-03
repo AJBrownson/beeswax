@@ -38,7 +38,8 @@ export const Section = styled.footer`
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #ffc500;
+        // color: #ffc500;
+        color: white;
         font-size: 1.6rem;
         transition: 0.3s ease-in-out;
         &:hover {

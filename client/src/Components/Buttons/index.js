@@ -1,12 +1,15 @@
 import React from 'react'
+import { FiShoppingCart } from 'react-icons/fi' 
 import { Button } from './Buttons.styles'
+import  { Link } from 'react-router-dom'
 
 
 export const OrderBtn = () => {
   return (
     <>
+    <Link to='/menu'>
       <Button primary>Order Now</Button>
-
+    </Link>
     </>
   )
 }
@@ -22,50 +25,51 @@ export const ResBtn = () => {
 }
 
 
-export const AllBtn = () => {
+export const Add2Cart = () => {
   return (
   <>
-      <Button primary>All</Button>
+      <Button cart>
+      <FiShoppingCart color="white" size={25} />
+      </Button>
   </>
     
   )
 }
 
 
-export const PizzaBtn = () => {
+export const Increase = () => {
   return (
-  <>
-      <Button>Pizza</Button>
-  </>
-    
+    <>
+      <Button add> + </Button>
+    </>
   )
 }
 
 
-export const BurgerBtn = () => {
+export const Decrease = () => {
   return (
-  <>
-      <Button>Burger</Button>
-  </>
-    
+    <>
+      <Button subtract> - </Button>
+    </>
   )
 }
 
 
-export const DrinksBtn = () => {
+export const Remove = () => {
   return (
-  <>
-      <Button>Drinks</Button>
-  </>
-    
+    <>
+      <Button remove>Remove</Button>
+    </>
   )
 }
 
 
-export const SandBtn = () => {
+export const Redirect2Menu = () => {
   return (
   <>
-      <Button>Sandwiches</Button>
+        <Link to='/menu'>
+        <Button menu>Go to Menu</Button>
+        </Link>
   </>
     
   )

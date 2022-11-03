@@ -121,3 +121,38 @@ color: white;
     }
 }
 `;
+
+
+export const CartDiv = styled.div`
+
+
+`
+
+export const CartButton = styled.button`
+width: 100%;
+position: relative;
+padding: 1rem;
+background: #0d0909;
+// background: brown;
+// color: black;
+border: transparent;
+border-radius: 50%;
+font-size: 1rem;
+cursor: pointer;
+`
+
+export const CartContent = styled.div`
+position: absolute;
+background: yellow;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 1.5rem;
+height: 1.5rem;
+padding: .6rem;
+border-radius: 50%;
+color: black;
+bottom: 0;
+right: 0;
+transform: translate(-5%, -15%);
+`

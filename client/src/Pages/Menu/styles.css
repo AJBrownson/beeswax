@@ -39,8 +39,104 @@
   background-color: orange;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .card .details {
   color: black;
+  /* display: flex;
+  justify-content: space-between; */
+  margin-bottom: 1rem;
+}
+
+.button-div {
+  margin: auto;
+}
+
+.column-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+.row-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+
+.add2Cart {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: #ffc500;
+  color: black;
+  border: transparent;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add2Cart:hover {
+  background: black;
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s ease-out;
+}
+
+
+.decrease {
+  padding: 1rem;
+  background: #ffc500;
+  color: black;
+  border: transparent;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.decrease:hover {
+    background: black;
+    color: hsl(0, 0%, 100%);
+    transition: 0.5s ease-out;
+}
+
+.increase {
+  padding: 1rem;
+  background: #ffc500;
+  color: black;
+  border: transparent;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.increase:hover {
+  background: black;
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s ease-out;
+}
+
+
+.remove {
+  padding: .5rem;
+  background: red;
+  color: black;
+  border: transparent;
+  /* border-radius: 10px; */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background: black;
+  color: hsl(0, 0%, 100%);
+  transition: 0.5s ease-out;
 }
 
 /* .swiper {

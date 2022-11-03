@@ -51,3 +51,10 @@ height: 80vh;
 background: hsl(38, 44%, 96%);
 padding: 40px;
 `
+
+export const MenuHeading = styled.p`
+font-size: clamp(2rem, 2.5vw, 3rem);
+margin-bottom: 2rem;
+text-align: center;
+text-transform: uppercase;
+`

@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 `; 
 

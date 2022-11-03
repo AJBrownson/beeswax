@@ -2,7 +2,6 @@ import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,6 +13,9 @@ import "./styles.css";
 import { Navigation, Lazy } from "swiper";
 
 import Food from '../../../../assets/images/food.png'
+
+import { FaPizzaSlice, FaWineBottle } from 'react-icons/fa'
+import { FaPrescriptionBottle } from "react-icons/fa";
 
 
 
@@ -39,41 +41,41 @@ export default function Swipe() {
       >
         <SwiperSlide className="swiperslide">
             <div className="card">
+              <FaPizzaSlice size={40} color='orange' />
               <img src={Food} alt='' />
               <div className="details">
-                <h3>Chicken Masala</h3>
-                <p>$12.00</p>
-                <button>Add to Cart</button>
+                <h3>Snacks</h3>
+                
               </div>
             </div>
         </SwiperSlide>
         <SwiperSlide className="swiperslide">
             <div className="card">
-              <img src={Food} alt='' />
+              <FaPrescriptionBottle size={40} color='orange' />
+              <img src={Food} alt='' color='orange' />
               <div className="details">
-                <h3>Chicken Masala</h3>
-                <p>$12.00</p>
-                <button>Add to Cart</button>
+                <h3>Soda</h3>
+                
               </div>
             </div>
         </SwiperSlide>
         <SwiperSlide className="swiperslide">
             <div className="card">
+              <FaWineBottle size={40} color='orange'/>
               <img src={Food} alt='' />
               <div className="details">
-                <h3>Chicken Masala</h3>
-                <p>$12.00</p>
-                <button>Add to Cart</button>
+                <h3>Wines & Spirits</h3>
+                
               </div>
             </div>
         </SwiperSlide>
         <SwiperSlide className="swiperslide">
             <div className="card">
+              <FaPizzaSlice size={40} color='orange' />
               <img src={Food} alt='' />
               <div className="details">
-                <h3>Chicken Masala</h3>
-                <p>$12.00</p>
-                <button>Add to Cart</button>
+                <h3>Fast Food</h3>
+                
               </div>
             </div>
         </SwiperSlide>

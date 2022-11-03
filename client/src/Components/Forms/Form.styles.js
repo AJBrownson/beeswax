@@ -8,7 +8,7 @@ align-items: center;
 justify-content: center;
 text-align: center;
 background: #ff9d2e0e;
-color: white;
+color: black;
 
 h2 {
     font-size: 25px;

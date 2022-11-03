@@ -2,21 +2,27 @@
     {
         "id": 1,
         "name": "Hamburger",
-        "price": 10.99,
+        "price": 2500,
         "image": "/images/food.png"
     },
     
     {
         "id": 2,
         "name": "Potatoes",
-        "price": 10.99,
+        "price": 2500,
         "image": "/images/food.png"
     },
     
     {
         "id": 3,
         "name": "Cream",
-        "price": 10.99,
+        "price": 2500,
+        "image": "/images/food.png"
+    },
+    {
+        "id": 4,
+        "name": "Chicken Masala",
+        "price": 2500,
         "image": "/images/food.png"
     }
 ]

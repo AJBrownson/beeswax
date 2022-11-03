@@ -47,6 +47,47 @@ ${props => props.reserve && css`
     
 `}
 
+${props => props.cart && css`
+    width: 100%;
+    position: relative;
+    padding: 0 1rem;
+    background: #0d0909;
+    background: brown;
+    // color: black;
+    border: transparent;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+
+    // :hover {
+    //     background: black;
+    //     color: hsl(0, 0%, 100%);
+    //     transition: 0.5s ease-out;
+    // }
+    
+`}
+
+
+
+${props => props.menu && css`
+    padding: 1rem;
+    background: #ffc500;
+    color: black;
+    border: transparent;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    :hover {
+        background: black;
+        color: hsl(0, 0%, 100%);
+        transition: 0.5s ease-out;
+    }
+    
+`}
+
+
+
 // @media screen and (max-width: 768px) {
 //   width: 8rem;
 // }
