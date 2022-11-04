@@ -10,7 +10,7 @@ import {
 } from './Menu.styles'
 import Swipe from './Swiper'
 import products from '../../data/items.json'
-import StoreItem from '../../Components/Stores/StoreItem'
+// import StoreItem from '../../Components/Stores/StoreItem'
 
 const Menu = () => {
   return (
