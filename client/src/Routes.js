@@ -1,24 +1,14 @@
-import React from 'react'
-import Home from './Pages/Home';
-import Menu from './Pages/Menu'
-import Reservation from './Pages/Reservation'
-import ShoppingCart from './Pages/ShoppingCart';
-import NotFound from './Pages/NotFound'
-import { Routes, Route } from 'react-router-dom'
+import React from "react";
+import Navbar from "./Layout/Navbar";
+import Home from "./Pages/Home";
 
-
-const Routing = () => {
+const Routes = () => {
   return (
     <>
-    <Routes>
-      <Route path='/' element={ <Home /> } />
-      <Route path='/menu' element={ <Menu /> } />
-      <Route path='/reservation' element={ <Reservation /> } />
-      <Route path='/cart' element={ <ShoppingCart /> } />
-      <Route path='*' element={ <NotFound /> } />
-    </Routes>
+      <Navbar />
+      <Home />
     </>
-  )
-}
+  );
+};
 
-export default Routing
+export default Routes;

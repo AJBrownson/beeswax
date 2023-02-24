@@ -1,19 +1,41 @@
 import React from 'react'
-import Hero from './homeComponents/Hero'
-import Menu from './homeComponents/Menu'
-import CTA from './homeComponents/CTA'
-import Delivery from './homeComponents/Delivery'
-import Testimonials from './homeComponents/Testimonials'
+import { Wrapper } from './Home.styles'
 
 
 const Home = () => {
   return (
     <>
-    <Hero />
-    <Menu />
-    <CTA />
-    <Delivery />
-    <Testimonials />
+        <Wrapper>
+            <div className='container'>
+                <div className='outdoors'>
+                    <img src={} alt='' />
+                    <div className='link'>
+                        <Link to='/' />
+                    </div>
+                </div>
+
+                <div className='wedding-bells'>
+                    <img src={} alt='' />
+                    <div className='link'>
+                        <Link to='/' />
+                    </div>
+                </div>
+
+                <div className='food-porn'>
+                    <img src={} alt='' />
+                    <div className='link'>
+                        <Link to='/' />
+                    </div>
+                </div>
+
+                <div className='vintage'>
+                    <img src={} alt='' />
+                    <div className='link'>
+                        <Link to='/' />
+                    </div>
+                </div>
+            </div>
+        </Wrapper>
     </>
   )
 }

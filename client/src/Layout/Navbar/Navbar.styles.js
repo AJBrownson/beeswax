@@ -1,17 +1,16 @@
 import styled from "styled-components";
-// import { FaDraftingCompass } from 'react-icons/fa';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import { Container } from '../../assets/GlobalStyles'
 
 
 export const Nav = styled.nav`
 margin: 0;
 height: 80px;
-background: #0d0909;
+// position: fixed;
+min-width: 100%;
+background: #fff;
 border-bottom: #0d0909;
-// background: white;
 display: flex;
-position: sticky;
 justify-content: space-between;
 align-items: center;
 font-size: 18px;
@@ -27,8 +26,8 @@ ${Container}
 `;
 
 
-export const NavLogo = styled(Link)`
-color: #fff;
+export const NavLogo = styled.div`
+color: #000;
 justify-self: flex-start;
 text-decoration: none;
 font-size: 2rem;
@@ -36,10 +35,6 @@ font-weight: 600;
 display: flex;
 align-items: center;
 `;
-
-// export const NavIcon = styled(FaDraftingCompass)`
-// margin-right: 0.5rem;
-// `;
 
 
 export const HamburgerIcon = styled.div`
@@ -53,7 +48,7 @@ display: none;
     transform: translate(-100%, 68%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: white;
+    color: black;
 }
 `;
 
@@ -83,9 +78,9 @@ export const NavItem = styled.li`
 height: 80px;
 border-bottom: 2px solid transparent;
 
-// &:hover {
-//     border-bottom: 2px solid #000016;
-// }
+&:hover {
+    border-bottom: 2px solid #000016;
+}
 
 @media screen and (max-width: 991px) {
     width: 100%;
@@ -96,15 +91,14 @@ border-bottom: 2px solid transparent;
 `;
 
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled.div`
 display: flex;
 align-items: center;
 text-decoration: none;
 list-style: none;
 padding: 0.5rem 1rem;
 height: 100%;
-// color: #0d0909;
-color: white;
+color: black;
 
 // &:active {
 //         color: blue;
@@ -121,38 +115,3 @@ color: white;
     }
 }
 `;
-
-
-export const CartDiv = styled.div`
-
-
-`
-
-export const CartButton = styled.button`
-width: 100%;
-position: relative;
-padding: 1rem;
-background: #0d0909;
-// background: brown;
-// color: black;
-border: transparent;
-border-radius: 50%;
-font-size: 1rem;
-cursor: pointer;
-`
-
-export const CartContent = styled.div`
-position: absolute;
-background: yellow;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 1.5rem;
-height: 1.5rem;
-padding: .6rem;
-border-radius: 50%;
-color: black;
-bottom: 0;
-right: 0;
-transform: translate(-5%, -15%);
-`

@@ -41,9 +41,9 @@ const Footer = () =>{
           <div className="title">
             <h3>Opening Hours</h3>
           </div>
-          <p>Monday - Friday: 07:00 - 11:00</p>
-          <p>Saturday: </p>
-          <p>Sunday: </p>
+          <p>Monday - Friday: 07:00AM - 11:00PM</p>
+          <p>Saturday: 07:00AM - 12:00PM</p>
+          <p>Sunday: 07:00 AM - 12:00PM</p>
         </div>
       </Section>
       <LowerFooter className="lower__footer">
