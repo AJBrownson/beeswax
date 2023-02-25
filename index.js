@@ -1,16 +1,28 @@
 const express = require('express')
-const app = express()
-const cors = require('cors')
 const bodyParser = require('body-parser')
+const cors = require('cors')
+const dotenv = require('dotenv').config()
+const { errorHandler } = require('./middleware/errorMiddleware')
+const multer = require('multer')
+const connectDB = require('./config/db')
 const port = process.env.PORT || 5000
-app.use(express.json())
+
+
+// Connects the applicaton to MongoDB
+connectDB()
+
+const app = express();
+
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
 
-app.get('/', (req, res) => {
-    res.send
-    ('Hello Server')
-})
+app.use('/api/about', require('./routes/adminRoutes/aboutRoutes'))
+app.use('/api/home', require('./routes/adminRoutes/homePageRoutes'))
+app.use('/api/section', require('./routes/adminRoutes/sectionRoutes'))
+app.use('/api/guestbook', require('./routes/clientRoutes/guestBookRoutes'))
 
-app.listen(port, () => [
-    console.log(`Server up and running at ${port}`)
-])
+app.use(errorHandler)
+
+app.listen(port, () => console.log(`Server running on port: ${port}`))
