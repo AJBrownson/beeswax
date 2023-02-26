@@ -2,25 +2,14 @@ const asyncHandler = require('express-async-handler')
 const Guest = require('../../models/clientModels/guestBookModel')
 
 
-// @desc    Get all guests comments
+// @desc    Get all guest comments
 // @route   GET /api/guestbook
-// @access  Private
+// @access  Public
 
-const getComment = asyncHandler(async (req, res) => {
-    const guests = await Guest.find()
+const getAllComments = asyncHandler(async (req, res) => {
+    const guest = await Guest.find()
 
-    res.status(200).json(guests)
-})
-
-
-// @desc    Get one guest comment
-// @route   GET /api/guestbook/:id
-// @access  Private
-
-const getOneComment = asyncHandler(async (req, res) => {
-    const guests = await Guest.findById()
-
-    res.status(200).json(guests)
+    res.status(200).json(guest)
 })
 
 
@@ -29,9 +18,9 @@ const getOneComment = asyncHandler(async (req, res) => {
 // @access  Public
 
 const addComment = asyncHandler(async (req, res) => {
-    if (!req.body.name && !req.body.comment) {
+    if(!req.body.name && !req.body.comment) {
         res.status(400)
-        throw new Error('Please write something')
+        throw new Error('Write something')
     }
 
     const newComment = new Guest({
@@ -44,16 +33,16 @@ const addComment = asyncHandler(async (req, res) => {
 })
 
 
-// @desc    Update guest comment
+// @desc    Update guests comments
 // @route   PUT /api/guestbook/:id
-//access    Private
+// @access  Private
 
 const updateComment = asyncHandler(async (req, res) => {
     const guest = await Guest.findById(req.params.id)
 
     if(!guest) {
         res.status(400)
-        throw new Error('Guest comment not found')
+        throw new Error('No comment has been added yet')
     }
 
     const updatedComment = await Guest.findByIdAndUpdate(req.params.id, req.body, {
@@ -73,19 +62,18 @@ const deleteComment = asyncHandler(async (req, res) => {
 
     if(!guest) {
         res.status(400)
-        throw new Error('No comment to delete')
+        throw new Error('Nothing to delete')
     }
 
     await Guest.findByIdAndRemove()
 
-    res.status(200).json({ id: req.params.id })
+    res.status(200).json('Record has been deleted')
 })
 
 
 module.exports = {
-    getComment,
-    getOneComment,
+    getAllComments,
     addComment,
     updateComment,
-    deleteComment,
+    deleteComment
 }

@@ -24,8 +24,8 @@ const addCategory = asyncHandler(async (req, res) => {
     }
 
     const newCategory = new Home({
-        name: req.body.category,
-        comment: req.body.img
+        category: req.body.category,
+        img: req.body.img
     })
 
     await newCategory.save()

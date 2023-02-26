@@ -3,16 +3,15 @@ const express = require('express')
 const router = express.Router()
 
 const {
-    getComment,
-    getOneComment,
+    getAllComments,
     addComment,
     updateComment,
     deleteComment
-} = require('../../controllers/clientControllers/guestBookController')
+} = require('../../controllers/clientControllers/guestBookControllers')
 
 
 // CHAINING THE ROUTES
-router.route('/').get(getComment, getOneComment).post(addComment)
+router.route('/').get(getAllComments).post(addComment)
 router.route('/:id').put(updateComment).delete(deleteComment)
 
 

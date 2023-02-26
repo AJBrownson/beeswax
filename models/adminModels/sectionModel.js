@@ -15,6 +15,6 @@ const SectionSchema = Schema({
         type: Date,
         default: new Date()
     }
-})
+}, { collection: 'Section' })
 
 module.exports = mongoose.model('Section', SectionSchema);

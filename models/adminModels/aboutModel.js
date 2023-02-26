@@ -22,6 +22,6 @@ const AboutSchema = Schema({
         type: Date,
         default: new Date()
     }
-})
+}, { collection: 'About' })
 
 module.exports = mongoose.model('About', AboutSchema);

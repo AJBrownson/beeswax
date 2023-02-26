@@ -16,6 +16,7 @@ const HomeSchema = Schema({
         type: Date,
         default: new Date()
     }
-})
+}, { collection: 'Home' })
+
 
 module.exports = mongoose.model('Home', HomeSchema);

@@ -15,7 +15,7 @@ const getSection = asyncHandler(async (req, res) => {
 
 // @desc    Add new section picture
 // @route   POST /api/section
-// @access  Public
+// @access  Private
 
 const addSection = asyncHandler(async (req, res) => {
     if (!req.body.img) {
