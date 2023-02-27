@@ -68,9 +68,9 @@ const deleteAbout = asyncHandler(async (req, res) => {
         throw new Error('Nothing to delete')
     }
 
-    await About.findByIdAndRemove()
+    await About.findOneAndRemove()
 
-    res.status(200).json({ id: req.params.id })
+    res.status(200).json('Record has been deleted')
 })
 
 

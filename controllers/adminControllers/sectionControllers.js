@@ -64,7 +64,7 @@ const deleteSection = asyncHandler(async (req, res) => {
         throw new Error('Nothing to delete')
     }
 
-    await Section.findByIdAndRemove()
+    await Section.findOneAndRemove()
 
     res.status(200).json({ id: req.params.id })
 })

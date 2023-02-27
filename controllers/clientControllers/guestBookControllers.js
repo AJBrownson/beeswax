@@ -65,7 +65,7 @@ const deleteComment = asyncHandler(async (req, res) => {
         throw new Error('Nothing to delete')
     }
 
-    await Guest.findByIdAndRemove()
+    await Guest.findOneAndRemove()
 
     res.status(200).json('Record has been deleted')
 })
