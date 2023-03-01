@@ -3,15 +3,9 @@ const Schema = mongoose.Schema
 
 
 const SectionSchema = Schema({
-    img: {
-        data: Buffer,
-        contentType: String
-    },
+    img: String,
+    cloudinary_id: String,
     createdAt: {
-        type: Date,
-        default: new Date()
-    },
-    updatedAt: { 
         type: Date,
         default: new Date()
     }

@@ -22,15 +22,15 @@ const Navbar = () => {
             </NavItem>
 
             <NavItem>
-              <NavLinks to="/portfolio">Portfolio</NavLinks>
+              <NavLinks to="/my-portfolio">Portfolio</NavLinks>
             </NavItem>
 
             <NavItem>
-              <NavLinks to="/about">About</NavLinks>
+              <NavLinks to="/about-me">About</NavLinks>
             </NavItem>
 
             <NavItem>
-              <NavLinks to="/guest">Guest</NavLinks>
+              <NavLinks to="/guestbook">Guest</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

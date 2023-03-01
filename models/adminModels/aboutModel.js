@@ -6,19 +6,11 @@ const AboutSchema = Schema({
     name: String,
     bio: String,
     location: String,
-    coverImg: {
-        data: Buffer,
-        contentType: String
-    },
-    avatarImg: {
-        data: Buffer,
-        contentType: String
-    },
+    coverImg: String,
+    cloudinary_id : String,
+    avatarImg: String,
+    cloudinary_id: String,
     createdAt: {
-        type: Date,
-        default: new Date()
-    },
-    updatedAt: { 
         type: Date,
         default: new Date()
     }

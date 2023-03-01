@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { Container } from '../../assets/GlobalStyles'
 
 
@@ -26,7 +26,7 @@ ${Container}
 `;
 
 
-export const NavLogo = styled.div`
+export const NavLogo = styled(Link)`
 color: #000;
 justify-self: flex-start;
 text-decoration: none;
@@ -91,7 +91,7 @@ border-bottom: 2px solid transparent;
 `;
 
 
-export const NavLinks = styled.div`
+export const NavLinks = styled(Link)`
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -99,6 +99,7 @@ list-style: none;
 padding: 0.5rem 1rem;
 height: 100%;
 color: black;
+cursor: pointer;
 
 // &:active {
 //         color: blue;

@@ -66,7 +66,7 @@ const deleteSection = asyncHandler(async (req, res) => {
 
     await Section.findOneAndRemove()
 
-    res.status(200).json({ id: req.params.id })
+    res.status(200).json('Record has been deleted')
 })
 
 

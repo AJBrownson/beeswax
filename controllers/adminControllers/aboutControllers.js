@@ -18,7 +18,14 @@ const getAbout = asyncHandler(async (req, res) => {
 // @access  Private
 
 const addAbout = asyncHandler(async (req, res) => {
-    if(!req.body.name && !req.body.bio && !req.body.location && !req.body.coverImg && !req.body.avatarImg) {
+
+    if(
+        !req.body.name && 
+        !req.body.bio && 
+        !req.body.location && 
+        !req.body.coverImg && 
+        !req.body.avatarImg) 
+        {
     res.status(400)
     throw new Error('Fill in the fields')
     }
