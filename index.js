@@ -12,14 +12,13 @@ connectDB()
 
 const app = express();
 
-
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors())
 
 
 // Routes
-app.use('/sample', sampleRoutes)
+app.use('/api/sample', sampleRoutes)
 app.use('/api/guestbook', require('./routes/clientRoutes/guestBookRoutes'))
 app.use('/api/about', require('./routes/adminRoutes/aboutRoutes'))
 app.use('/api/home', require('./routes/adminRoutes/homePageRoutes'))

@@ -1,4 +1,6 @@
-const router = require('express').Router()
+// const router = require('express').Router()
+const express = require('express')
+const router = express.Router()
 const cloudinary  = require('../../middleware/cloudinary'); 
 const Sample = require('../../models/clientModels/sampleModel');
 const upload = require('../../middleware/multer')
