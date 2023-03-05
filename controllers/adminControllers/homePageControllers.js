@@ -1,5 +1,7 @@
 const asyncHandler = require('express-async-handler')
 const Home = require('../../models/adminModels/homePageModel')
+const cloudinary = require('../../middleware/cloudinary')
+const upload = require('../../middleware/multer')
 
 
 // @desc    Get all home categories and pictures
@@ -18,18 +20,33 @@ const getAllCategories = asyncHandler(async (req, res) => {
 // @access  Public
 
 const addCategory = asyncHandler(async (req, res) => {
-    if (!req.body.category && !req.body.img) {
-        res.status(400)
-        throw new Error('Please enter something')
+    // const result = await cloudinary.uploader.upload(req.file.path)
+    // if (!req.body.category && !req.body.img) {
+    //     res.status(400)
+    //     throw new Error('Please enter something')
+    // }
+
+    // const newCategory = new Home({
+    //     category: req.body.category,
+    //     img: req.body.img
+    // })
+
+    // await newCategory.save()
+    // res.status(201).json(newCategory)
+
+    try {
+        const result = await cloudinary.uploader.upload(req.file.path)
+        const newCategory = new Home({
+            category: req.body.category,
+            image: result.secure_url,
+            cloudinary_id: result.public_id,
+        });
+
+        await newCategory.save()
+        res.status(201).json(newCategory)
+    } catch (error) {
+        console.log(error)
     }
-
-    const newCategory = new Home({
-        category: req.body.category,
-        img: req.body.img
-    })
-
-    await newCategory.save()
-    res.status(201).json(newCategory)
 })
 
 

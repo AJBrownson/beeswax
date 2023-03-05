@@ -5,9 +5,9 @@ const dotenv = require('dotenv').config()
 const { errorHandler } = require('./middleware/errorMiddleware')
 const connectDB = require('./config/db')
 const port = process.env.PORT || 5000
+const sampleRoutes = require('./routes/clientRoutes/sampleRoutes')
 
-
-// Connects the applicaton to MongoDB
+// Connects the application to MongoDB
 connectDB()
 
 const app = express();
@@ -17,6 +17,9 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
 
+
+// Routes
+app.use('/sample', sampleRoutes)
 app.use('/api/guestbook', require('./routes/clientRoutes/guestBookRoutes'))
 app.use('/api/about', require('./routes/adminRoutes/aboutRoutes'))
 app.use('/api/home', require('./routes/adminRoutes/homePageRoutes'))
