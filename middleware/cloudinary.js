@@ -11,8 +11,7 @@ cloudinary.config({
 
 const options = {
     resource_type: "auto",
-    folder: "Sample",
-    collection: "BeesWax"
+    folder: "beeswax",
 }
 
 module.exports = { cloudinary, options };
