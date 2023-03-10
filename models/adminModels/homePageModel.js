@@ -4,12 +4,8 @@ const Schema = mongoose.Schema
 
 const HomeSchema = Schema({
     category: String,
-    image: {
-        type: String
-    },
-    cloudinary_id: {
-        type: String
-    },
+    snapshot: String,
+    cloudinary_id: String,
     createdAt: {
         type: Date,
         default: new Date()

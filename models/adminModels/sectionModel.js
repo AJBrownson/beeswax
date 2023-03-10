@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 
 const SectionSchema = Schema({
-    img: String,
+    snapshot: String,
     cloudinary_id: String,
     createdAt: {
         type: Date,

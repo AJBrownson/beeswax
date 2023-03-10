@@ -5,7 +5,6 @@ const dotenv = require('dotenv').config()
 const { errorHandler } = require('./middleware/errorMiddleware')
 const connectDB = require('./config/db')
 const port = process.env.PORT || 5000
-const sampleRoutes = require('./routes/clientRoutes/sampleRoutes')
 
 // Connects the application to MongoDB
 connectDB()
@@ -18,7 +17,6 @@ app.use(cors())
 
 
 // Routes
-app.use('/api/sample', sampleRoutes)
 app.use('/api/guestbook', require('./routes/clientRoutes/guestBookRoutes'))
 app.use('/api/about', require('./routes/adminRoutes/aboutRoutes'))
 app.use('/api/home', require('./routes/adminRoutes/homePageRoutes'))
