@@ -67,7 +67,7 @@ text-align: center;
     height: 90vh;
     position: absolute;
     top: 80px;
-    left: ${({click}) => (click ? 0 : '-100%')};
+    left: ${({click}) => (click ? 0 : '-111%')};
     opacity: 1;
     transition: all 0.5s ease;
     background: #ffc500;

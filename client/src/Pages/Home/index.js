@@ -1,43 +1,55 @@
-import React from 'react'
-import { Wrapper } from './Home.styles'
-
+import React from "react";
+import {
+  Wrapper,
+  OutdoorSection,
+  LinkOnImage,
+  WeddingSection,
+  FoodSection,
+} from "./Home.styles";
+import Fast from "../../assets/images/fastfood.jpg";
+import { Link } from "react-router-dom";
+import GButton from "../../Components/Button";
 
 const Home = () => {
   return (
     <>
-        <Wrapper>
-            <div className='container'>
-                {/* <div className='outdoors'>
-                    <img src={} alt='' />
-                    <div className='link'>
-                        <Link to='/' />
-                    </div>
-                </div> */}
+      <Wrapper>
+        <OutdoorSection>
+          <img src={Fast} alt="" />
+          <LinkOnImage>
+            <Link to="/my-portfolio">
+              <GButton />
+            </Link>
+          </LinkOnImage>
+        </OutdoorSection>
 
-                {/* <div className='wedding-bells'>
-                    <img src={} alt='' />
-                    <div className='link'>
-                        <Link to='/' />
-                    </div>
-                </div> */}
+        <WeddingSection>
+          <img src={Fast} alt="" />
+          <LinkOnImage>
+            <Link to="/my-portfolio">
+              <GButton />
+            </Link>
+          </LinkOnImage>
+        </WeddingSection>
 
-                {/* <div className='food-porn'>
-                    <img src={} alt='' />
-                    <div className='link'>
-                        <Link to='/' />
-                    </div>
-                </div> */}
+        <FoodSection>
+          <img src={Fast} alt="" />
+          <LinkOnImage>
+            <Link to="/my-portfolio">
+              <GButton />
+            </Link>
+          </LinkOnImage>
+        </FoodSection>
 
-                {/* <div className='vintage'>
+        {/* <div className='vintage foodporn wedding bells'>
                     <img src={} alt='' />
                     <div className='link'>
                         <Link to='/' />
                     </div>
                 </div> */}
-            </div>
-        </Wrapper>
+      </Wrapper>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
