@@ -1,8 +1,8 @@
 import React from 'react'
-import { GoToButton } from "./styles"
+import { GoToButton, ContactMeButton } from "./styles"
 
 
-const GButton = () => {
+export const GButton = () => {
   return (
     <>
         <GoToButton>
@@ -12,4 +12,12 @@ const GButton = () => {
   )
 }
 
-export default GButton
+export const ContactButton = () => {
+  return (
+    <>
+      <ContactMeButton>
+        Contact Me
+      </ContactMeButton>
+    </>
+  )
+}

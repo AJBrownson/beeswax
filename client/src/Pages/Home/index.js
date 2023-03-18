@@ -8,7 +8,7 @@ import {
 } from "./Home.styles";
 import Fast from "../../assets/images/fastfood.jpg";
 import { Link } from "react-router-dom";
-import GButton from "../../Components/Button";
+import { GButton } from "../../Components/Button";
 
 const Home = () => {
   return (

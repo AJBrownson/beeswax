@@ -7,3 +7,9 @@ font-size: large;
 background: transparent;
 border: transparent;
 `
+
+export const ContactMeButton = styled.button`
+width: 8rem;
+color: black;
+padding: 1rem;
+`
