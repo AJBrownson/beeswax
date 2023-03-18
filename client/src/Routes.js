@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Layout/Navbar";
+import Footer from "./Layout/Footer"
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Guest from "./Pages/Guest";
@@ -16,6 +17,7 @@ const Routing = () => {
         <Route path="/about-me" element={<About />} />
         <Route path="/guestbook" element={<Guest />} />
       </Routes>
+      <Footer />
     </>
   );
 };
