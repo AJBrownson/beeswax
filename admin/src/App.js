@@ -4,7 +4,7 @@ import "./App.css"
 function App () {
   return (
     <>
-    Hello Admin
+      <h1 className='underline text-3xl'>Hello Admin</h1>
     </>
   )
 }
