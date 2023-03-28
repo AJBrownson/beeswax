@@ -1,19 +1,9 @@
-// import React from "react";
-// import { Routes, Route } from "react-router-dom";
+import React from 'react'
 
-// const Routing = () => {
-//     return (
-//       <>
-//         <Navbar />
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/my-portfolio" element={<Portfolio />} />
-//           <Route path="/about-me" element={<About />} />
-//           <Route path="/guestbook" element={<Guest />} />
-//         </Routes>
-//         <Footer />
-//       </>
-//     );
-//   };
-  
-//   export default Routing;
+const Routing = () => {
+  return (
+    <div>Routing</div>
+  )
+}
+
+export default Routing

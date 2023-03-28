@@ -1,11 +1,8 @@
 import React from 'react'
-import "./App.css"
 
-function App () {
+const App = () => {
   return (
-    <>
-      <h1 className='underline text-3xl'>Hello Admin</h1>
-    </>
+    <div>Hello Admin</div>
   )
 }
 
