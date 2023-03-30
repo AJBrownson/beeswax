@@ -1,8 +1,16 @@
 import React from 'react'
+import "./App.css"
+import Sidebar from './layout/Sidebar'
 
 const App = () => {
   return (
-    <div>Hello Admin</div>
+    <>
+      <div className="App">
+        <div className="AppGlass">
+          <Sidebar />
+        </div>
+      </div>
+    </>
   )
 }
 
