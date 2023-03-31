@@ -1,12 +1,13 @@
-import {useState} from "react";
+import { useState } from "react";
 import "./styles.css";
 import NavLogo from "../../assets/Logo.svg";
 import { SidebarLinks } from "./data";
-import { AiOutlineLogout } from "react-icons/ai"
+import { AiOutlineLogout } from "react-icons/ai";
 
 
 const Sidebar = () => {
-    const [selected, setSelected] = useState(0)
+  const [selected, setSelected] = useState(0);
+
   return (
     <>
       <div className="sidebar">
@@ -18,13 +19,18 @@ const Sidebar = () => {
         <div className="menu">
           {SidebarLinks.map((item, index) => {
             return (
-              <div className={selected===index?'menuItem active' : 'menuItem'}
-              key={index}
-              onClick={()=>setSelected(index)}
+              <ul
+                className={selected === index ? "menuItem active" : "menuItem"}
+                key={index}
+                onClick={() => setSelected(index)}
               >
-                <item.icon />
-                <span>{item.title}</span>
-              </div>
+                <a href={item.path}>
+                  <li>
+                    <item.icon />
+                    <span>{item.title}</span>
+                  </li>
+                </a>
+              </ul>
             );
           })}
 

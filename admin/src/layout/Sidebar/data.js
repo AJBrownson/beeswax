@@ -5,22 +5,27 @@ import { BsBriefcase, BsPeople } from "react-icons/bs"
 export const SidebarLinks = [
     {
         icon: RxDashboard,
-        title: "Dashboard"
+        title: "Dashboard",
+        path: "/"
     },
     {
         icon: AiOutlineHome,
-        title: "Home"
+        title: "Home",
+        path: "/home"
     },
     {
         icon: BsBriefcase,
-        title: "Portfolio"
+        title: "Portfolio",
+        path: "/my-portfolio"
     },
     {
         icon: RxAvatar,
-        title: "Avatar"
+        title: "About",
+        path: "/about-me"
     },
     {
         icon: BsPeople,
-        title: "Guest"
+        title: "Guest",
+        path: "/guestbook"
     },
 ]
